@@ -1,4 +1,4 @@
-# Best Pizza — Pizza Delivery
+# Best Pizza - Pizza Delivery
 
 **Best Pizza** is a demo pizza delivery website with an interactive menu, shopping cart, and order form. This project showcases skills in HTML, CSS, JavaScript, and Bootstrap.
 
@@ -12,7 +12,7 @@
 - Change item quantity in the cart
 - Display total price and total items
 - Modal checkout form with validation
-- Save cart data in `localStorage`
+- Save cart data in localStorage
 - Responsive design for mobile devices
 - Smooth hover effects and animations
 

@@ -114,7 +114,7 @@ function updateCartDisplay() {
 function addToCart(name, price) {
     const existing = cart.find(p => p.name === name);
     if (existing) {
-        existing.qty++; // если товар уже есть — увеличиваем количество
+        existing.qty++; // если товар уже есть увеличиваем количество
     } else {
         cart.push({ name, price, qty: 1 }); // иначе добавляем новый объект
     }
@@ -144,7 +144,7 @@ document.querySelector('#sortAsc').addEventListener('click', () => sortPizzas('a
 document.querySelector('#sortDesc').addEventListener('click', () => sortPizzas('desc'));
 document.querySelector('#sortDefault').addEventListener('click', () => renderPizzas());
 
-// Кнопка "Checkout" — открытие формы заказа
+// Кнопка "Checkout" открытие формы заказа
 document.querySelector('#checkoutBtn').addEventListener('click', () => {
     if (cart.length === 0) {
         alert("Cart is empty!");
@@ -200,7 +200,7 @@ document.querySelector('#orderForm').addEventListener('submit', function(e) {
         hasError = true;
     }
 
-    // Если есть ошибки — скроллим к первому полю
+    // Если есть ошибки скроллим к первому полю
     if (hasError) {
         document.querySelector('.is-invalid')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
